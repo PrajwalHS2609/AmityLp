@@ -41,8 +41,8 @@ const HomeHeroSection = () => {
                 <input type="text" placeholder="Enter Name" />
                 <input type="email" placeholder="Enter Email" />
                 <input type="tel" placeholder="Enter Mobile Number*" />
-                <input type="text" placeholder="Enter OTP" />
-
+                {/* <textarea type="text" placeholder="Enter OTP" /> */}
+                <textarea name="" id="" placeholder="Message" />
                 <label className="heroForm-consent">
                   <input type="checkbox" checked readOnly />
                   <span>

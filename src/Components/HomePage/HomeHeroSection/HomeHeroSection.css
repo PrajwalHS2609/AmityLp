@@ -70,7 +70,7 @@
   font-size: 20px;
 }
 .homeHero-coverContent > h2 {
-  color: white;
+  color: white;font-size: 40px;
 }
 .homeHero-section {
   background-color: var(--customColor2);
@@ -103,7 +103,7 @@
 }
 
 .homeHero-coverContentForm h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   color: #1f3b6e;
   margin-bottom: 20px;
@@ -126,8 +126,18 @@
   font-size: 14px;
   outline: none;
 }
-
+.heroForm textarea {
+  height: 48px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid #d8dee9;
+  font-size: 14px;
+  outline: none;
+}
 .heroForm input::placeholder {
+  color: #8a94a6;
+}
+.heroForm textarea::placeholder {
   color: #8a94a6;
 }
 
@@ -161,7 +171,7 @@
 .heroForm button:hover {
   background: #082f55;
 }
-.homeHero-respWrapper{
+.homeHero-respWrapper {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -204,17 +214,18 @@
     flex-direction: column;
   }
   .homeHero-respCoverContent1 > b {
-  color: var(--customColor2);
-  font-size: 20px;
-}
-.homeHero-respCoverContent1 > h2 {
-  color: white;
-}
+    color: var(--customColor2);
+    font-size: 20px;
+  }
+  .homeHero-respCoverContent1 > h2 {
+    color: white;
+  }
   .homeHero-coverContentForm {
     width: 100%;
     margin-top: 20px;
   }
-  .homeHero-coverContentForm>h2{
-    font-size: 20px;text-align: center;
+  .homeHero-coverContentForm > h2 {
+    font-size: 20px;
+    text-align: center;
   }
 }

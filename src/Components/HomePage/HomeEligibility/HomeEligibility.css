@@ -1,3 +1,4 @@
+
 .homeEligibility-container {
   /* border: solid red; */
   display: flex;
@@ -23,6 +24,7 @@
 }
 .homeEligibility-headingIcon {
   color: var(--customColor1);
+  font-size: 50px;
 }
 .homeEligibility-content > ul {
   margin: 0;
