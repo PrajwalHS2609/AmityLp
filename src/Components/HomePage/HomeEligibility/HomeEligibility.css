@@ -1,0 +1,69 @@
+.homeEligibility-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+.homeEligibility-content {
+  /* border: solid green; */
+  height: 100%;
+  padding: 30px;
+}
+.homeEligibility-content:nth-child(1) {
+  border-right: solid 1px grey;
+}
+.homeEligibility-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: solid 1px grey;
+  padding: 10px;
+}
+.homeEligibility-headingIcon {
+  color: var(--customColor1);
+}
+.homeEligibility-content > ul {
+  margin: 0;
+  padding: 0;
+  /* border: solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeEligibility-content > ul > li {
+  margin: 10px;
+  display: flex;
+  list-style: none;
+}
+.homeEligibility-icon {
+  width: 40px;
+  font-size: 20px;
+  color: grey;
+}
+.homeEligibility-content > ul > li > p {
+  width: 100%;
+  color: grey;
+}
+.homeEligibility-heading2 {
+  padding: 20px;
+  background-color: var(--customColor1);
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.homeEligibility-heading2 > h2 {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .homeEligibility-container {
+    /* border: solid red; */
+    padding: 10px;
+    flex-direction: column;
+  }
+  .homeEligibility-content:nth-child(1) {
+    border-right: none;
+  }
+
+}

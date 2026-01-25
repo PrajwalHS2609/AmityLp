@@ -1,0 +1,30 @@
+.homeFaq-container {
+  padding: 50px;
+}
+.homeFaq-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.homeFaq-heading>h2{
+   font-size: 40px;
+    color: var(--customColor1);
+}
+.homeFaq-head {
+  font-size: 20px;
+}
+.homeFaq-item {
+  margin-bottom: 10px;
+  border: solid var(--customColor3);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--customColor1);
+  color: white;
+  border: none;
+}
+@media screen and (max-width:768px) {
+  .homeFaq-container {
+  padding: 20px;
+}
+}

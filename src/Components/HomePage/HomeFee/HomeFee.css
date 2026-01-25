@@ -1,0 +1,141 @@
+.homeFees-container {
+  /* border: solid red; */
+  padding: 20px;
+}
+.homeFees-heading {
+  border-bottom: solid 1px grey;
+}
+.homeFees-heading > h2 {
+  color: var(--customColor1);
+}
+.homeFees-wrapper {
+  /* border: solid blue; */
+  padding: 30px;
+}
+.homeFees-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: solid; */
+}
+.homeFees-card {
+  /* border: solid black; */
+  width: 320px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--customColor1);
+}
+.homeFees-cover {
+  /* border: solid green; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeFees-icon {
+  font-size: 6rem;
+  position: absolute;
+  right: -10px;
+  transform: rotateY(-180deg);
+  color: var(--customColor2);
+}
+.homeFees-cover > p {
+  color: white;
+  font-size: 20px;
+}
+.homeFees-cover > span > h4 {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.homeFees-cover > span > p {
+  color: white;
+  font-size: 20px;
+}
+.homeFees-card1 {
+  /* border: solid black; */
+  width: 320px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px grey;
+  transition: 300ms ease;
+}
+.homeFees-card1:hover {
+  background-color: var(--customColor1);
+}
+.homeFees-cover1 {
+  /* border: solid green; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: 300ms ease;
+}
+.homeFees-icon1 {
+  font-size: 6rem;
+  position: absolute;
+  right: -10px;
+  color: whitesmoke;
+}
+.homeFees-cover1 > p {
+  color: var(--customColor1);
+  font-size: 20px;
+}
+.homeFees-cover1 > span > h4 {
+  color: var(--customColor1);
+  font-size: 35px;
+  font-weight: bold;
+}
+.homeFees-cover1 > span > p {
+  color: var(--customColor1);
+  font-size: 20px;
+}
+.homeFees-card1:hover p {
+  color: white;
+}
+.homeFees-card1:hover h4 {
+  color: white;
+}
+.homeFees-card1:last-child > .homeFees-cover1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.homeFees-cover1 > b {
+  color: var(--customColor1);
+}
+@media screen and (max-width: 768px) {
+  .homeFees-content {
+    gap: 20px;
+    flex-wrap: wrap;
+    /* border: solid; */
+  }
+}

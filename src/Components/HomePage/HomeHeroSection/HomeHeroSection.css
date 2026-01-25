@@ -1,0 +1,220 @@
+.homeHero-container {
+  /* border: solid red; */
+  padding: 15px 30px;
+}
+.homeHero-wrapper {
+  /* border: solid green; */
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 520px;
+}
+.homeHero-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeHero-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1a325dc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeHero-coverContent {
+  /* border: solid green; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeHero-coverContent:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  width: 50%;
+}
+.homeHero-coverImgBg {
+  /* border: solid red; */
+  width: 310px;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -50px;
+  left: -40px;
+  background-color: var(--customColor2);
+}
+.homeHero-coverImgBg > img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  top: -30px;
+  z-index: 1;
+}
+.homeHero-coverContent:nth-child(2) {
+  align-items: flex-start;
+  gap: 20px;
+}
+.homeHero-coverContent > b {
+  color: var(--customColor2);
+  font-size: 20px;
+}
+.homeHero-coverContent > h2 {
+  color: white;
+}
+.homeHero-section {
+  background-color: var(--customColor2);
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.homeHero-duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.homeHero-durationIcon {
+  color: var(--customColor2);
+  font-size: 30px;
+}
+.homeHero-coverContent:nth-child(3) {
+  /* border: solid red; */
+  padding: 30px 20px;
+}
+
+.homeHero-coverContentForm {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  width: 80%;
+}
+
+.homeHero-coverContentForm h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f3b6e;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+
+.heroForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heroForm input[type="text"],
+.heroForm input[type="email"],
+.heroForm input[type="tel"] {
+  height: 48px;
+  padding: 0 18px;
+  border-radius: 30px;
+  border: 1px solid #d8dee9;
+  font-size: 14px;
+  outline: none;
+}
+
+.heroForm input::placeholder {
+  color: #8a94a6;
+}
+
+.heroForm-consent {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.heroForm-consent input {
+  accent-color: #0b3c6d;
+  margin-top: 2px;
+}
+
+.heroForm button {
+  margin-top: 10px;
+  height: 52px;
+  border-radius: 30px;
+  border: none;
+  background: #0b3c6d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.heroForm button:hover {
+  background: #082f55;
+}
+.homeHero-respWrapper{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .homeHero-wrapper {
+    display: none;
+  }
+  .homeHero-respWrapper {
+    /* border: solid; */
+    height: 100%;
+    display: block;
+  }
+  .homeHero-respSection {
+    position: relative;
+    height: 400px;
+  }
+  .homeHero-respSection > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .homeHero-respCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1a325dc9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .homeHero-respCoverContent1 {
+    /* border: solid red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homeHero-respCoverContent1 > b {
+  color: var(--customColor2);
+  font-size: 20px;
+}
+.homeHero-respCoverContent1 > h2 {
+  color: white;
+}
+  .homeHero-coverContentForm {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .homeHero-coverContentForm>h2{
+    font-size: 20px;text-align: center;
+  }
+}
