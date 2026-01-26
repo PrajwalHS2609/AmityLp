@@ -19,7 +19,8 @@ const Navbar = () => {
       <div className="bottomBar-container">
         <b onClick={handlePop}>
           {" "}
-          <span> Important!</span> January’26 Session Admissions Closing Soon
+          <span> January 2026 </span> - 120+ Working Professionals Enrolled in
+          India’s #1 Online MBA
         </b>
       </div>
     </div>

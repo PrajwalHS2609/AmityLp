@@ -191,8 +191,7 @@ const Footer = () => {
           </p>
         </div>{" "}
         <div className="footer-bottomTextBlock">
-          Copyright © 2025 | collegesathi.com | Terms & Conditions | Privacy
-          Policy | Disclaimer
+          Copyright © 2025 | prizmaacademy.in
         </div>
       </div>
     </div>
