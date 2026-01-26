@@ -4,6 +4,7 @@ import Navbar from './../Components/Navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
 import PopupForm from './../Components/PopupForm/PopupForm';
+import Footer from './../Components/Footer/Footer';
 
 
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body >
         <Navbar />
         {children}
+        <Footer/>
         <PopupForm/>
       </body>
     </html>

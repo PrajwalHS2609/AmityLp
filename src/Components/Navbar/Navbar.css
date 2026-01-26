@@ -66,4 +66,7 @@
   .bottomBar-container {
     border-radius: 5px;
   }
+ .bottomBar-container > b{
+  cursor: pointer;font-size: 12px;
+ }
 }

@@ -42,10 +42,16 @@
 }
 .homeApproval-heading > h2 {
   color: var(--customColor1);
+  font-size: 40px;
 }
 .homeApproval-heading > p {
   color: grey;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
-
+  .homeApproval-heading > h2 {
+    color: var(--customColor1);
+    font-size: 30px;
+    text-align: center;
+  }
 }

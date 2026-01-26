@@ -7,9 +7,9 @@
   align-items: center;
   padding: 20px;
 }
-.homeFaq-heading>h2{
-   font-size: 40px;
-    color: var(--customColor1);
+.homeFaq-heading > h2 {
+  font-size: 40px;
+  color: var(--customColor1);
 }
 .homeFaq-head {
   font-size: 20px;
@@ -23,8 +23,13 @@
   color: white;
   border: none;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .homeFaq-container {
-  padding: 20px;
-}
+    padding: 20px;
+  }
+  .homeFaq-heading > h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--customColor1);
+  }
 }

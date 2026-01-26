@@ -70,7 +70,8 @@
   font-size: 20px;
 }
 .homeHero-coverContent > h2 {
-  color: white;font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
 .homeHero-section {
   background-color: var(--customColor2);
@@ -215,7 +216,7 @@
   }
   .homeHero-respCoverContent1 > b {
     color: var(--customColor2);
-    font-size: 20px;
+    font-size: 16px;
   }
   .homeHero-respCoverContent1 > h2 {
     color: white;

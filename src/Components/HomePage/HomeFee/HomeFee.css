@@ -6,6 +6,7 @@
   border-bottom: solid 1px grey;
 }
 .homeFees-heading > h2 {
+  font-size: 40px;
   color: var(--customColor1);
 }
 .homeFees-wrapper {
@@ -137,5 +138,10 @@
     gap: 20px;
     flex-wrap: wrap;
     /* border: solid; */
+  }
+  .homeFees-heading > h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--customColor1);
   }
 }
