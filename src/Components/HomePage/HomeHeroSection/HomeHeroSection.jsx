@@ -234,9 +234,9 @@ const HomeHeroSection = () => {
                 <option value="Production & Operations Management">
                   Production & Operations Management
                 </option>
-                <option value="Petroleum & Natural Gas Management">
+                {/* <option value="Petroleum & Natural Gas Management">
                   Petroleum & Natural Gas Management
-                </option>
+                </option> */}
                 <option value="Entrepreneurship & Leadership Management">
                   Entrepreneurship & Leadership Management
                 </option>
