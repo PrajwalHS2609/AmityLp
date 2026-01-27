@@ -74,25 +74,49 @@ const PopupForm = () => {
               required
             />
 
-            {/* <select name="course" id="" required>
+            <select name="course" id="" required>
               <option value="">Select Course</option>
-              <option value="MBA (General Management)">
-                MBA (General Management)
+              <option value="Finance and Accounting Management">
+                Finance and Accounting Management
               </option>
-              <option value="MBA (Finance)">MBA (Finance)</option>
-              <option value="MBA (Marketing)">MBA (Marketing)</option>
-              <option value="MBA (HR Management)">MBA (HR Management)</option>
-              <option value="MBA (Information Technology)">
-                MBA (Information Technology)
+              <option value="Global Finance Market">
+                Global Finance Market
               </option>
-              <option value="MBA (Supply Chain Management)">
-                MBA (Supply Chain Management)
+              <option value="Insurance Management">Insurance Management</option>
+              <option value="Information Technology Management">
+                Information Technology Management
               </option>
-              <option value="MBA (Data Analytics)">MBA (Data Analytics)</option>
-              <option value="MBA (Business Analytics)">
-                MBA (Business Analytics)
+              <option value="Digital Marketing Management">
+                Digital Marketing Management
               </option>
-            </select> */}
+              <option value="Data Science">Data Science</option>
+              <option value="Digital Entrepreneurship">
+                Digital Entrepreneurship
+              </option>
+              <option value="International Business Management">
+                International Business Management
+              </option>
+              <option value="Business Analytics">Business Analytics</option>
+              <option value="Retail Management">Retail Management</option>
+              <option value="Human Resource Management">
+                Human Resource Management
+              </option>
+              <option value="Human Resources Analytics Hospitality Management">
+                Human Resources Analytics Hospitality Management
+              </option>
+              <option value="Production & Operations Management">
+                Production & Operations Management
+              </option>
+              <option value="Petroleum & Natural Gas Management">
+                Petroleum & Natural Gas Management
+              </option>
+              <option value="Entrepreneurship & Leadership Management">
+                Entrepreneurship & Leadership Management
+              </option>
+              <option value="Marketing & Sales Management">
+                Marketing & Sales Management
+              </option>
+            </select>
 
             <textarea
               name="message"

@@ -77,9 +77,9 @@
 }
 .homeHero-section {
   background-color: var(--customColor2);
-  padding: 10px;
+  padding: 5px 10px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .homeHero-duration {
   /* border: solid red; */
@@ -91,7 +91,7 @@
   color: white;
   margin-top: 20px;
 }
-.homeHero-durationContent{
+.homeHero-durationContent {
   /* border: solid yellow; */
   width: 200px;
   font-size: 18px;
@@ -106,13 +106,54 @@
   padding: 30px 20px;
   width: 38%;
 }
-
+.homeHero-button {
+  width: 100%;
+  /* border: solid green; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.homeHero-button > button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
+  font-size: 20px;
+}
+.homeHero-button > a > button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
+  font-size: 20px;
+}
+.homeHero-button > button:nth-child(1) {
+  border: solid 1px var(--customColor2);
+  background-color: transparent;
+  transition: 300ms ease;
+  color: white;
+}
+.homeHero-button > button:nth-child(1):hover {
+  background-color: var(--customColor2);
+}
+.homeHero-button > a > button {
+  border: solid 1px var(--customColor2);
+  background-color: var(--customColor2);
+  transition: 300ms ease;
+  color: white;
+}
+.homeHero-button > a > button:hover {
+  background-color: transparent;
+}
 .homeHero-coverContentForm {
   background: #ffffff;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   width: 80%;
+  transform: scale(0.8);
 }
 
 .homeHero-coverContentForm h2 {
@@ -138,6 +179,15 @@
   border: 1px solid #d8dee9;
   font-size: 14px;
   outline: none;
+}
+.heroForm select {
+  height: 48px;
+  padding: 0 18px;
+  border-radius: 30px;
+  border: 1px solid #d8dee9;
+  font-size: 14px;
+  outline: none;
+  color: #8a94a6;
 }
 .heroForm textarea {
   height: 48px;
@@ -189,9 +239,9 @@
 }
 @media screen and (max-width: 768px) {
   .homeHero-container {
-  /* border: solid red; */
-  padding: 15px 20px;
-}
+    /* border: solid red; */
+    padding: 15px 20px;
+  }
   .homeHero-wrapper {
     display: none;
   }
@@ -246,23 +296,40 @@
     text-align: center;
   }
   .homeHero-duration {
-  /* border: solid red; */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  color: white;
-  margin-top: 20px;
-}
-.homeHero-durationContent{
-  /* border: solid yellow; */
-  width: fit-content;
-  font-size: 15px;
-}
-.homeHero-durationIcon {
-  color: var(--customColor2);
-  font-size: 15px;
-  margin-right: 5px;
-}
+    /* border: solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+    margin-top: 20px;
+  }
+  .homeHero-durationContent {
+    /* border: solid yellow; */
+    width: fit-content;
+    font-size: 15px;
+  }
+  .homeHero-durationIcon {
+    color: var(--customColor2);
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .homeHero-button > button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    font-size: 18px;
+  }
+  .homeHero-button > a > button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    font-size: 18px;
+  }
+  .homeHero-coverContentForm {
+    transform: scale(1);
+  }
 }

@@ -59,3 +59,100 @@
     padding: 10px;
   }
 }
+/* ---------------------------SeoKeyword---------------------------------- */
+.keywords-container {
+  /* border: solid red; */
+  width: 100%;
+  margin: auto;
+  /* background: #ffffff; */
+  padding: 10px;
+  border-radius: 16px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.keywords-title {
+  font-size: 40px;
+  text-align: center;
+  color: var(--customColor1);
+}
+/* .keywords-title > span {
+  color: var(--customColor1);
+} */
+
+/* 💥 Multi-column layout */
+.keywords-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: calc(100% * 35px); /* 30 rows * approx 22px height each */
+  column-count: 4; /* auto split in 2 columns */
+  column-gap: 30px;
+}
+
+.keywords-item {
+  /* border: solid green; */
+  background: var(--customColor3);
+  padding: 8px 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  border-left: 4px solid var(--customColor2);
+  break-inside: avoid; /* prevents items from breaking between columns */
+  transition: 0.25s ease;
+  width: 15 0px;
+}
+
+.keywords-item:hover {
+  background: #e8f0ff;
+  transform: translateX(3px);
+}
+@media screen and (max-width: 768px) {
+  .keywords-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    column-count: 1; /* auto split in 2 columns */
+    column-gap: 30px;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  .keywords-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  .keywords-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: fit-content; /* 30 rows * approx 22px height each */
+    column-count: 3; /* auto split in 2 columns */
+    column-gap: 30px;
+    padding: 10px;
+    width: 100%;
+  }
+  .keywords-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  .keywords-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: fit-content; /* 30 rows * approx 22px height each */
+    column-count: 3; /* auto split in 2 columns */
+    column-gap: 30px;
+    padding: 10px;
+  }
+  .keywords-title {
+    font-size: 30px;
+  }
+}

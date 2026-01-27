@@ -43,6 +43,9 @@ const HomeHeroSection = () => {
       });
     }
   };
+  const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
+  };
   return (
     <div className="homeHero-container">
       <div className="homeHero-wrapper">
@@ -55,7 +58,7 @@ const HomeHeroSection = () => {
             </div>
           </div>
           <div className="homeHero-coverContent">
-            <b>INDIA&apos;S MOST RECOGNISED UCG-ENTITLED</b>
+            <b>INDIA&apos;S MOST RECOGNISED UGC-ENTITLED</b>
             <h2>Online MBA Program</h2>
             <div className="homeHero-section">For Working Professionals</div>
             <div className="homeHero-duration">
@@ -76,17 +79,68 @@ const HomeHeroSection = () => {
                 Flexible EMI Options
               </div>
             </div>
+            <div className="homeHero-button">
+              <button onClick={handlePop}>Download Brochure</button>
+
+              <a href="tel:8302129336">
+                <button>Contact Us</button>
+              </a>
+            </div>
           </div>
           <div className="homeHero-coverContent">
             <div className="homeHero-coverContentForm">
               <h2>Connect With Our Experts</h2>
 
               <form className="heroForm" onSubmit={onSubmit}>
-                <input type="text" placeholder="Enter Name" />
-                <input type="email" placeholder="Enter Email" />
-                <input type="tel" placeholder="Enter Mobile Number*" />
-                {/* <textarea type="text" placeholder="Enter OTP" /> */}
-                <textarea name="" id="" placeholder="Message" />
+                <input name="Name" type="text" placeholder="Enter Name" />
+                <input name="Email" type="email" placeholder="Enter Email" />
+                <input name="Phone No" type="tel" placeholder="Enter Mobile Number*" />
+                <select name="course" id="" required>
+                  <option value="">Select Course</option>
+                  <option value="Finance and Accounting Management">
+                    Finance and Accounting Management
+                  </option>
+                  <option value="Global Finance Market">
+                    Global Finance Market
+                  </option>
+                  <option value="Insurance Management">
+                    Insurance Management
+                  </option>
+                  <option value="Information Technology Management">
+                    Information Technology Management
+                  </option>
+                  <option value="Digital Marketing Management">
+                    Digital Marketing Management
+                  </option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="Digital Entrepreneurship">
+                    Digital Entrepreneurship
+                  </option>
+                  <option value="International Business Management">
+                    International Business Management
+                  </option>
+                  <option value="Business Analytics">Business Analytics</option>
+                  <option value="Retail Management">Retail Management</option>
+                  <option value="Human Resource Management">
+                    Human Resource Management
+                  </option>
+                  <option value="Human Resources Analytics Hospitality Management">
+                    Human Resources Analytics Hospitality Management
+                  </option>
+                  <option value="Production & Operations Management">
+                    Production & Operations Management
+                  </option>
+                  <option value="Petroleum & Natural Gas Management">
+                    Petroleum & Natural Gas Management
+                  </option>
+                  <option value="Entrepreneurship & Leadership Management">
+                    Entrepreneurship & Leadership Management
+                  </option>
+                  <option value="Marketing & Sales Management">
+                    Marketing & Sales Management
+                  </option>
+                </select>
+                <textarea name="Message" id="" placeholder="Message" />
                 <label className="heroForm-consent">
                   <input type="checkbox" checked readOnly />
                   <span>
@@ -108,7 +162,7 @@ const HomeHeroSection = () => {
           <Image src={banner} alt="banner" width={1400} height={800} />
           <div className="homeHero-respCover">
             <div className="homeHero-respCoverContent1">
-              <b>INDIA&apos;S MOST RECOGNISED UCG-ENTITLED</b>
+              <b>INDIA&apos;S MOST RECOGNISED UGC-ENTITLED</b>
               <h2>Online MBA Program</h2>
               <div className="homeHero-section">For Working Professionals </div>
               <div className="homeHero-duration">
@@ -129,6 +183,13 @@ const HomeHeroSection = () => {
                   Flexible EMI Options
                 </div>
               </div>
+              <div className="homeHero-button">
+                <button onClick={handlePop}>Download Brochure</button>
+
+                <a href="tel:8302129336">
+                  <button>Contact Us</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -138,10 +199,55 @@ const HomeHeroSection = () => {
             <h2>Connect With Our Experts</h2>
 
             <form className="heroForm" onSubmit={onSubmit}>
-              <input type="text" placeholder="Enter Name" />
-              <input type="email" placeholder="Enter Email" />
-              <input type="tel" placeholder="Enter Mobile Number*" />
-              <textarea name="" id="" placeholder="Message" />
+              <input name="Name" type="text" placeholder="Enter Name" />
+              <input name="Email" type="email" placeholder="Enter Email" />
+              <input name="Phone No" type="tel" placeholder="Enter Mobile Number*" />
+              <select name="course" id="" required>
+                <option value="">Select Course</option>
+                <option value="Finance and Accounting Management">
+                  Finance and Accounting Management
+                </option>
+                <option value="Global Finance Market">
+                  Global Finance Market
+                </option>
+                <option value="Insurance Management">
+                  Insurance Management
+                </option>
+                <option value="Information Technology Management">
+                  Information Technology Management
+                </option>
+                <option value="Digital Marketing Management">
+                  Digital Marketing Management
+                </option>
+                <option value="Data Science">Data Science</option>
+                <option value="Digital Entrepreneurship">
+                  Digital Entrepreneurship
+                </option>
+                <option value="International Business Management">
+                  International Business Management
+                </option>
+                <option value="Business Analytics">Business Analytics</option>
+                <option value="Retail Management">Retail Management</option>
+                <option value="Human Resource Management">
+                  Human Resource Management
+                </option>
+                <option value="Human Resources Analytics Hospitality Management">
+                  Human Resources Analytics Hospitality Management
+                </option>
+                <option value="Production & Operations Management">
+                  Production & Operations Management
+                </option>
+                <option value="Petroleum & Natural Gas Management">
+                  Petroleum & Natural Gas Management
+                </option>
+                <option value="Entrepreneurship & Leadership Management">
+                  Entrepreneurship & Leadership Management
+                </option>
+                <option value="Marketing & Sales Management">
+                  Marketing & Sales Management
+                </option>
+              </select>
+              <textarea name="Message" id="" placeholder="Message" />
 
               <label className="heroForm-consent">
                 <input type="checkbox" checked readOnly />

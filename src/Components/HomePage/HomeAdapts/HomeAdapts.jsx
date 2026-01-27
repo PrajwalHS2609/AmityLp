@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
 import "./HomeAdapts.css";
 const HomeAdapts = () => {
+      const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
+  };
   return (
     <div className="homeAdapts-container">
       <div className="homeAdapts-wrapper">
@@ -12,7 +17,7 @@ const HomeAdapts = () => {
         ></iframe>
       </div>
       <div className="homeAdapts-content">
-        <h3>Learning That Adapts to You</h3>
+        <h2>Learning That Adapts to You</h2>
         <span>
           {" "}
           <p>
@@ -33,7 +38,7 @@ const HomeAdapts = () => {
             every student to achieve their best.
           </p>
         </span>
-        <button>Get Started</button>
+        <button onClick={handlePop}>Get Started</button>
       </div>
     </div>
   );

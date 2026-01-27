@@ -54,6 +54,7 @@ const HomeDifferent = () => {
       text: "Smart unified platform with AI-generated summaries, quizzes & notes.",
     },
   ];
+
   return (
     <div className="homeDifferent-container">
       <div className="homeDifferent-content">
@@ -66,7 +67,10 @@ const HomeDifferent = () => {
           content structure which not only builds your skillset but trains you
           to perform best in the real business environment and situations.
         </p>
-        <button>Known More</button>
+        <a href="tel:8302129336">
+          {" "}
+          <button>Talk to an Expert</button>
+        </a>
       </div>
       <div className="homeDifferent-wrapper">
         <Carousel

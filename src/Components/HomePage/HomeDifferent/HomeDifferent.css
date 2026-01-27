@@ -22,7 +22,7 @@
 .homeDifferent-wrapper {
   width: 60%;
 }
-.homeDifferent-content > button {
+.homeDifferent-content>a > button {
   width: 100%;
   padding: 5px;
   border-radius: 10px;

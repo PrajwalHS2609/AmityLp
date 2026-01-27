@@ -65,7 +65,9 @@
   outline: none;
   transition: border 0.3s;
 }
-
+.popup-form select{
+  color:grey;
+}
 .popup-form input:focus,
 .popup-form select:focus,
 .popup-form textarea:focus {
