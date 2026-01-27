@@ -1,48 +1,48 @@
-"use client"
+"use client";
 import React from "react";
 import "./HomeHeroSection.css";
 import Image from "next/image";
 import banner from "@/Images/homeBanner.png";
 import { FaRegCircleDot } from "react-icons/fa6";
-import heroSectionGirl from "@/Images/heroSectionGirl.png"
+import heroSectionGirl from "@/Images/heroSectionGirl.png";
 import Swal from "sweetalert2";
 const HomeHeroSection = () => {
-    const onSubmit = async (event) => {
-      event.preventDefault();
-      const form = event.target;
-      const formData = new FormData(form);
-  
-      // ✅ Add your Web3Forms access key
-      formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
-  
-      const object = Object.fromEntries(formData.entries());
-      const json = JSON.stringify(object);
-  
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      }).then((res) => res.json());
-  
-      if (res.success) {
-        Swal.fire({
-          title: "Success!",
-          text: "Mail Sent successfully",
-          icon: "success",
-          confirmButtonText: "OK",
-        });
-        form.reset();
-      } else {
-        Swal.fire({
-          title: "Error!",
-          text: "Something went wrong. Please try again later.",
-          icon: "error",
-        });
-      }
-    };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // ✅ Add your Web3Forms access key
+    formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again later.",
+        icon: "error",
+      });
+    }
+  };
   return (
     <div className="homeHero-container">
       <div className="homeHero-wrapper">
@@ -50,10 +50,7 @@ const HomeHeroSection = () => {
         <div className="homeHero-cover">
           <div className="homeHero-coverContent">
             <div className="homeHero-coverImgBg">
-              <Image
-                src={heroSectionGirl}
-                alt=""
-              />
+              <Image src={heroSectionGirl} alt="" />
               <div></div>
             </div>
           </div>
@@ -111,14 +108,9 @@ const HomeHeroSection = () => {
           <Image src={banner} alt="banner" width={1400} height={800} />
           <div className="homeHero-respCover">
             <div className="homeHero-respCoverContent1">
-              <b>PG Program</b>
-              <h2>
-                Empower Your Career with AI-powered Online MBA for Next Gen
-                Leaders
-              </h2>
-              <div className="homeHero-section">
-                Next-Gen MBA for an AI-Ready Career
-              </div>
+              <b>INDIA&apos;S MOST RECOGNISED UCG-ENTITLED</b>
+              <h2>Online MBA Program</h2>
+              <div className="homeHero-section">For Working Professionals </div>
               <div className="homeHero-duration">
                 <div className="homeHero-durationContent">
                   <FaRegCircleDot className="homeHero-durationIcon" />
