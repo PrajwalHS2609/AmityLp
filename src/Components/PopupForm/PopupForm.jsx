@@ -118,11 +118,11 @@ const PopupForm = () => {
               </option>
             </select>
 
-            <textarea
+            {/* <textarea
               name="message"
               placeholder="Your Message"
               rows="4"
-            ></textarea>
+            ></textarea> */}
 
             <button type="submit">Submit</button>
           </form>

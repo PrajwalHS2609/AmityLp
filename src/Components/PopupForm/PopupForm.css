@@ -71,7 +71,7 @@
 .popup-form input:focus,
 .popup-form select:focus,
 .popup-form textarea:focus {
-  border-color: var(--accentColor1);
+  border-color: var(--customColor2);
 }
 
 .popup-form button {

@@ -140,7 +140,7 @@ const HomeHeroSection = () => {
                     Marketing & Sales Management
                   </option>
                 </select>
-                <textarea name="Message" id="" placeholder="Message" />
+                {/* <textarea name="Message" id="" placeholder="Message" /> */}
                 <label className="heroForm-consent">
                   <input type="checkbox" checked readOnly />
                   <span>
@@ -202,7 +202,7 @@ const HomeHeroSection = () => {
               <input name="Name" type="text" placeholder="Enter Name" />
               <input name="Email" type="email" placeholder="Enter Email" />
               <input name="Phone No" type="tel" placeholder="Enter Mobile Number*" />
-              <select name="course" id="" required>
+              <select  name="course" id="" required>
                 <option value="">Select Course</option>
                 <option value="Finance and Accounting Management">
                   Finance and Accounting Management
@@ -247,7 +247,7 @@ const HomeHeroSection = () => {
                   Marketing & Sales Management
                 </option>
               </select>
-              <textarea name="Message" id="" placeholder="Message" />
+              {/* <textarea name="Message" id="" placeholder="Message" /> */}
 
               <label className="heroForm-consent">
                 <input type="checkbox" checked readOnly />

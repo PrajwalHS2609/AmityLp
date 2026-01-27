@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
 import PopupForm from './../Components/PopupForm/PopupForm';
 import Footer from './../Components/Footer/Footer';
+import WhatsApp from './../Components/WhatsApp/WhatsApp';
 
 
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         {children}
         <Footer/>
         <PopupForm/>
+        <WhatsApp/>
       </body>
     </html>
   );
