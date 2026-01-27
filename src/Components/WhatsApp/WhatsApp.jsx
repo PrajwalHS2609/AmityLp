@@ -23,10 +23,10 @@ const WhatsApp = () => {
       </a> */}
       <FloatingWhatsApp
         phoneNumber="918302129336"
-        accountName="PrimeCleanCo "
+        accountName="Amity"
         avatar={Logo.src} // Optional
         statusMessage="Typically replies within 5 min" // Optional
-        chatMessage="" // Optional
+        chatMessage="Trusted by 120+ working professionals for Amity Online MBA admissions in January 2026.  📞 Call/WhatsApp: 8302129336" // Optional
         placeholder="Type a message..." // Optional
       />
     </div>
