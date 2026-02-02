@@ -9,6 +9,7 @@ import Neha from "@/Images/faculty/Neha.png";
 import Pragati from "@/Images/faculty/Pragati.png";
 import Rashmi from "@/Images/faculty/Rashmi.png";
 import Reema from "@/Images/faculty/Reema.png";
+import Image from "next/image";
 
 const HomeFaculty = () => {
   const responsive = {
@@ -94,7 +95,7 @@ const HomeFaculty = () => {
             <div key={index} className="homeFaculty-item">
               <div className="homeFaculty-itemWrapper">
                 <div className="homeFaculty-img">
-                  <img
+                  <Image
                     src={item.img}
                     alt={item.text}
                     width={100}
