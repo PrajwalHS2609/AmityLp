@@ -2,6 +2,14 @@
 import React from "react";
 import "./HomeFaculty.css";
 import Carousel from "react-multi-carousel";
+import Maitri from "@/Images/faculty/Maitri.png";
+import Coral from "@/Images/faculty/Coral_Barboza.png";
+import Mona from "@/Images/faculty/Mona.png";
+import Neha from "@/Images/faculty/Neha.png";
+import Pragati from "@/Images/faculty/Pragati.png";
+import Rashmi from "@/Images/faculty/Rashmi.png";
+import Reema from "@/Images/faculty/Reema.png";
+
 const HomeFaculty = () => {
   const responsive = {
     superLargeDesktop: {
@@ -23,37 +31,37 @@ const HomeFaculty = () => {
   };
   const items = [
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Rashmi_8b49fa929f_0da32a8dc8.webp",
+      img: Rashmi,
       title: "Dr. Rashmi Saxena",
       text: "Assistant Professor | 14+ years of experience; PhD in Management",
     },
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Mona_a759d1ef3c_1ab8bcc0c1.webp",
+      img: Mona,
       title: "Mona Chaudhary",
       text: "Assistant Professor | 9+ years of experience; MBA",
     },
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Neha_863217fa3c_4b0b362ef8.webp",
+      img: Neha,
       title: "Neha Tandon",
       text: "Assistant Professor",
     },
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Coral_Barboza_431bdc3292.webp",
+      img: Coral,
       title: "Dr. Coral Jasmine",
       text: "Associate Professor | 10+ years of experience; PhD in General",
     },
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Pragati_baf7c9d3f8_7377e19cde.webp",
+      img: Pragati,
       title: "Dr. Pragati Sahai",
       text: "Assistant Professor | 17+ years of experience; PhD in Biotechnology",
     },
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Maitri_222f683f53_a1f236c8b1.webp",
+      img: Maitri,
       title: "Dr. Maitri Savarn",
       text: "MA in Psychology, MBA, PhD in Human Resource Management",
     },
     {
-      img: "https://www.collegesathi.com/amityonlinemba/Reema_d2c70932d9.webp",
+      img: Reema,
       title: "Dr. Reema Sharma ",
       text: "Associate Professor | 15+ years of experience; PhD in Management ",
     },
