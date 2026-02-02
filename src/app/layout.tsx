@@ -47,6 +47,29 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Conversion tracking function */}
+        <Script
+          id="gtag-conversion"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17917921555/i2ynCMDEkPEbEJOS999C',
+                    'value': 1.0,
+                    'currency': 'INR',
+                    'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body >
