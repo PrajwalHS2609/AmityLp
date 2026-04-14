@@ -82,7 +82,7 @@ const HomeHeroSection = () => {
             <div className="homeHero-button">
               <button onClick={handlePop}>Download Brochure</button>
 
-              <a href="tel:8302129336">
+              <a href="tel:6362946008 ">
                 <button>Contact Us</button>
               </a>
             </div>
@@ -183,7 +183,7 @@ const HomeHeroSection = () => {
               <div className="homeHero-button">
                 <button onClick={handlePop}>Download Brochure</button>
 
-                <a href="tel:8302129336">
+                <a href="tel:6362946008 ">
                   <button>Contact Us</button>
                 </a>
               </div>

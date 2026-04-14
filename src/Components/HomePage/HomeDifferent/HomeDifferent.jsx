@@ -67,7 +67,7 @@ const HomeDifferent = () => {
           content structure which not only builds your skillset but trains you
           to perform best in the real business environment and situations.
         </p>
-        <a href="tel:8302129336">
+        <a href="tel:6362946008 ">
           {" "}
           <button>Talk to an Expert</button>
         </a>

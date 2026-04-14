@@ -22,12 +22,12 @@ const WhatsApp = () => {
         <Image src={whatsApp} alt="" />
       </a> */}
       <FloatingWhatsApp
-        phoneNumber="918302129336"
+        phoneNumber="916362946008 "
         accountName="Amity Online MBA "
         avatar={Logo.src} // Optional
         statusMessage="Typically replies within 5 min" // Optional
         chatMessage="Hello,
-Trusted by 120+ working professionals for Amity Online MBA admissions in January 2026. 📞 Call/WhatsApp: 8302129336" // Optional
+Trusted by 120+ working professionals for Amity Online MBA admissions in January 2026. 📞 Call/WhatsApp: 6362946008 " // Optional
         placeholder="Type a message..." // Optional
       />
     </div>

@@ -3,6 +3,8 @@ import React from "react";
 import { HiArrowSmallDown } from "react-icons/hi2";
 import "./HomeProgram.css";
 import { Accordion } from "react-bootstrap";
+import Image from "next/image";
+import certificate from "@/Images/certificate.png"
 const HomeProgram = () => {
   const faq = [
     {
@@ -105,9 +107,9 @@ const HomeProgram = () => {
         </Accordion>
       </div>
       <div className="homeProgram-img">
-        <img
-          src="https://www.collegesathi.com/amityonlinemba/images/MBA_fafef0a1e1.webp"
-          alt=""
+        <Image
+          src={certificate}
+          alt="certificate"
         />
       </div>
     </div>
