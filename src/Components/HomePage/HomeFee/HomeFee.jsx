@@ -16,7 +16,7 @@ const HomeFee = () => {
             <div className="homeFees-cover">
               <p>24 Months No Cost EMI</p>
               <span>
-                <h4>₹7877/-</h4>
+                <h4>₹8906/-</h4>
                 <p>per month onwards</p>
               </span>
             </div>
@@ -26,7 +26,7 @@ const HomeFee = () => {
             <div className="homeFees-cover1">
               <p>Full Course Fee</p>
               <span>
-                <h4>₹49,750</h4>
+                <h4>₹56,300</h4>
               </span>
             </div>
           </div>
@@ -35,7 +35,7 @@ const HomeFee = () => {
             <div className="homeFees-cover1">
               <p>Full Course Fee</p>
               <span>
-                <h4>₹1,99,000/-</h4>
+                <h4>₹2,25,000/-</h4>
               </span>
             </div>
           </div>
