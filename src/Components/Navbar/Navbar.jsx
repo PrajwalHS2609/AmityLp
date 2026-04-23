@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="bottomBar-container">
         <b onClick={handlePop}>
           {" "}
-          <span> January 2026 </span> - 120+ Working Professionals Enrolled in
+          <span> July 2026 </span> - 120+ Working Professionals Enrolled in
           India’s #1 Online MBA
         </b>
       </div>
