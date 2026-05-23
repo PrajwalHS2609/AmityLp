@@ -94,7 +94,11 @@ const HomeHeroSection = () => {
               <form className="heroForm" onSubmit={onSubmit}>
                 <input name="Name" type="text" placeholder="Enter Name" />
                 <input name="Email" type="email" placeholder="Enter Email" />
-                <input name="Phone No" type="tel" placeholder="Enter Mobile Number*" />
+                <input
+                  name="Phone No"
+                  type="tel"
+                  placeholder="Enter Mobile Number*"
+                />
                 <select name="course" id="" required>
                   <option value="">Select Course</option>
                   <option value="Finance and Accounting Management">
@@ -124,8 +128,11 @@ const HomeHeroSection = () => {
                   <option value="Human Resource Management">
                     Human Resource Management
                   </option>
-                  <option value="Human Resources Analytics Hospitality Management">
-                    Human Resources Analytics Hospitality Management
+                  <option value="Human Resources Analytics">
+                    Human Resources Analytics
+                  </option>
+                  <option value="Hospitality Management">
+                    Hospitality Management
                   </option>
                   <option value="Production & Operations Management">
                     Production & Operations Management
@@ -198,8 +205,12 @@ const HomeHeroSection = () => {
             <form className="heroForm" onSubmit={onSubmit}>
               <input name="Name" type="text" placeholder="Enter Name" />
               <input name="Email" type="email" placeholder="Enter Email" />
-              <input name="Phone No" type="tel" placeholder="Enter Mobile Number*" />
-              <select  name="course" id="" required>
+              <input
+                name="Phone No"
+                type="tel"
+                placeholder="Enter Mobile Number*"
+              />
+              <select name="course" id="" required>
                 <option value="">Select Course</option>
                 <option value="Finance and Accounting Management">
                   Finance and Accounting Management
