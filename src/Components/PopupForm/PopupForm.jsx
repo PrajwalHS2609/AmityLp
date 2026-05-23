@@ -101,8 +101,11 @@ const PopupForm = () => {
               <option value="Human Resource Management">
                 Human Resource Management
               </option>
-              <option value="Human Resources Analytics Hospitality Management">
-                Human Resources Analytics Hospitality Management
+              <option value="Human Resources Analytics">
+                Human Resources Analytics
+              </option>
+              <option value="Hospitality Management">
+                Hospitality Management
               </option>
               <option value="Production & Operations Management">
                 Production & Operations Management
