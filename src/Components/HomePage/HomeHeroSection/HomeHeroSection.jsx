@@ -92,12 +92,23 @@ const HomeHeroSection = () => {
               <h2>Connect With Our Experts</h2>
 
               <form className="heroForm" onSubmit={onSubmit}>
-                <input name="Name" type="text" placeholder="Enter Name" />
-                <input name="Email" type="email" placeholder="Enter Email" />
+                <input
+                  name="Name"
+                  type="text"
+                  placeholder="Enter Name"
+                  required
+                />
+                <input
+                  name="Email"
+                  type="email"
+                  placeholder="Enter Email"
+                  required
+                />
                 <input
                   name="Phone No"
                   type="tel"
                   placeholder="Enter Mobile Number*"
+                  required
                 />
                 <select name="course" id="" required>
                   <option value="">Select Course</option>
