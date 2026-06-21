@@ -18,19 +18,40 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-    // fake loading for animation effect
+  useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 1200);
 
     return () => clearTimeout(timeout);
   }, []);
+
   return (
     <html lang="en">
       <head>
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),
+                dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-W236N4Q5');
+            `,
+          }}
+        />
+
+        {/* Existing Google Ads code */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-17917921555"
@@ -47,37 +68,29 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Conversion tracking function */}
-        <Script
-          id="gtag-conversion"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              function gtag_report_conversion(url) {
-                var callback = function () {
-                  if (typeof(url) != 'undefined') {
-                    window.location = url;
-                  }
-                };
-                gtag('event', 'conversion', {
-                    'send_to': 'AW-17917921555/i2ynCMDEkPEbEJOS999C',
-                    'value': 1.0,
-                    'currency': 'INR',
-                    'event_callback': callback
-                });
-                return false;
-              }
-            `,
-          }}
-        />
+
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
-      <body >
+
+      <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W236N4Q5"
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden",
+            }}
+          />
+        </noscript>
+
         <Navbar />
         {loading ? <Loader /> : children}
-        <Footer/>
-        <PopupForm/>
-        <WhatsApp/>
+        <Footer />
+        <PopupForm />
+        <WhatsApp />
       </body>
     </html>
   );
