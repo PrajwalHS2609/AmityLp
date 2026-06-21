@@ -171,7 +171,7 @@ const Footer = () => {
           </p>
         </div>{" "}
         <div className="footer-bottomTextBlock">
-          Copyrights © 2026 prizmaacademy.in - All Right Reserved.
+          Copyright © 2026 prizmaacademy.in - All Right Reserved.
         </div>
       </div>
     </div>
