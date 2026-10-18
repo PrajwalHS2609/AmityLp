@@ -145,7 +145,7 @@ export default function RootLayout({
         {loading ? <Loader /> : children}
 
         {/* Footer with Sanity Keywords */}
-        <Footer data={keywordsData} />
+        <Footer />
 
         {/* Popup Form */}
         <PopupForm />
