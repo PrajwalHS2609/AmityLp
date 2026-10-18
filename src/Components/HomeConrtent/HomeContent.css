@@ -1,0 +1,426 @@
+
+/* ==============================
+   HOME CONTENT
+============================== */
+
+.contentHead {
+  width: 100%;
+  padding: 70px 20px;
+  background: #ffffff;
+  color: #374151;
+}
+
+.contentHead-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contentHead-content {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.85;
+  overflow-wrap: break-word;
+}
+
+.contentHead-content + .contentHead-content {
+  margin-top: 25px;
+}
+
+/* ==============================
+   HEADINGS
+============================== */
+
+.contentHead-content h2,
+.contentHead-content h3,
+.contentHead-content h4,
+.contentHead-content h5 {
+  color: var(--customColor2);
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 25px 0 15px;
+}
+
+.contentHead-content h1 {
+  font-size: clamp(30px, 3.5vw, 42px);
+}
+
+.contentHead-content h2 {
+  font-size: clamp(24px, 2.8vw, 34px);
+}
+
+.contentHead-content h3 {
+  font-size: clamp(20px, 2.2vw, 27px);
+}
+
+.contentHead-content h4 {
+  font-size: 21px;
+}
+
+.contentHead-content > :first-child {
+  margin-top: 0;
+}
+
+/* ==============================
+   PARAGRAPHS
+============================== */
+
+.contentHead-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  color: #475569;
+  text-align: justify;
+}
+
+.contentHead-content strong {
+  color: var(--customColor1);
+  font-weight: 700;
+}
+
+.contentHead-content a {
+  color: var(--customColor1);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--customColor2);
+  text-underline-offset: 4px;
+}
+
+.contentHead-content a:hover {
+  color: #345b98;
+}
+
+/* ==============================
+   LISTS
+============================== */
+
+.contentHead-content ul,
+.contentHead-content ol {
+  padding-left: 28px;
+  margin: 15px 0 25px;
+}
+
+.contentHead-content li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  line-height: 1.8;
+}
+
+.contentHead-content li::marker {
+  color: var(--customColor1);
+}
+
+/* ==============================
+   IMAGES
+============================== */
+
+.contentHead-content .portableImg {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contentHead-content .portableImg img {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  height: auto;
+  object-fit: cover;
+}
+.contentHead-content h1{
+width: 100%;
+text-align: center;
+}
+/* ==============================
+   CUSTOM TABLE
+============================== */
+
+.contentHead-content .content-table-container {
+  width: 100%;
+  margin: 35px 0;
+}
+
+.contentHead-content .content-table-heading {
+  margin-bottom: 20px;
+}
+
+.contentHead-content .content-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #dbe3ee;
+  border-radius: 12px;
+}
+
+.contentHead-content .content-table {
+  width: 100%;
+  min-width: 550px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.contentHead-content .content-table th {
+  background: var(--customColor1);
+  color: #ffffff;
+  padding: 16px 18px;
+  font-size: 15px;
+  text-align: left;
+  border-bottom: 3px solid var(--customColor2);
+}
+
+.contentHead-content .content-table td {
+  padding: 15px 18px;
+  font-size: 15px;
+  color: #374151;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contentHead-content .content-table tbody tr:nth-child(even) {
+  background: var(--customColor3);
+}
+
+.contentHead-content .content-table tbody tr:hover {
+  background: #dcecff;
+}
+
+/* ==============================
+   ACCORDION / FAQ
+============================== */
+
+.contentHead-content .accordion-item {
+  margin-bottom: 12px;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.contentHead-content .accordion-title {
+  padding: 18px 20px;
+  background: var(--customColor3);
+  color: var(--customColor1);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contentHead-content .accordion-title:hover {
+  background: #dcecff;
+}
+
+.contentHead-content .accordion-item[open] > .accordion-title {
+  background: var(--customColor1);
+  color: #ffffff;
+}
+
+.contentHead-content .accordion-content {
+  padding: 20px;
+}
+
+.contentHead-content .portable-faq {
+  margin: 30px 0;
+}
+
+/* ==============================
+   QUOTE BLOCK
+============================== */
+
+.contentHead-content .quote-block,
+.contentHead-content blockquote {
+  margin: 30px 0;
+  padding: 25px 30px;
+  background: var(--customColor3);
+  border-left: 5px solid var(--customColor2);
+  border-radius: 0 12px 12px 0;
+}
+
+.contentHead-content .quote-text {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--customColor1);
+}
+
+.contentHead-content .quote-author {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--customColor1);
+}
+
+/* ==============================
+   HIGHLIGHT BOX
+============================== */
+
+.contentHead-content .highlight-box {
+  padding: 25px 30px;
+  margin: 30px 0;
+  background: var(--customColor3);
+  border: 1px solid #dbe3ee;
+  border-left: 5px solid var(--customColor2);
+  border-radius: 12px;
+}
+
+.contentHead-content .highlight-box h5 {
+  margin-top: 0;
+  color: var(--customColor1);
+}
+
+/* ==============================
+   SEO KEYWORDS
+============================== */
+
+.contentHead-content .seo-keywords-block {
+  margin: 30px 0;
+}
+
+.contentHead-content .seo-keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.contentHead-content .seo-keywords-list li {
+  margin: 0;
+  padding: 9px 16px;
+  background: var(--customColor3);
+  border: 1px solid #dbe3ee;
+  border-radius: 30px;
+  color: var(--customColor1);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ==============================
+   CAROUSEL
+============================== */
+
+.contentHead-content .carouselContainer {
+  margin: 35px 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.contentHead-content .carouselContainer img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.contentHead-content .carousel-caption {
+  background: rgba(26, 50, 93, 0.85);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.contentHead-content .carousel-caption h3 {
+  color: #ffffff;
+}
+
+/* ==============================
+   ANCHOR
+============================== */
+
+.contentHead-content .content-anchor {
+  scroll-margin-top: 100px;
+  margin: 30px 0;
+}
+
+/* ==============================
+   READ MORE BUTTON
+============================== */
+
+.readMoreBtn {
+  display: block;
+  margin: 35px auto 0;
+  padding: 13px 35px;
+  background: var(--customColor1);
+  color: #ffffff;
+  border: 2px solid var(--customColor1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  background: var(--customColor2);
+  color: var(--customColor1);
+  border-color: var(--customColor2);
+  transform: translateY(-2px);
+}
+
+.readMoreBtn:focus-visible {
+  outline: 3px solid var(--customColor2);
+  outline-offset: 3px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+  .contentHead {
+    padding: 45px 16px;
+  }
+
+  .contentHead-content p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .contentHead-content h2 {
+    font-size: 25px;
+  }
+
+  .contentHead-content h3 {
+    font-size: 21px;
+  }
+
+  .contentHead-content .content-table th,
+  .contentHead-content .content-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .contentHead-content .carouselContainer img {
+    height: 260px;
+  }
+
+  .contentHead-content .highlight-box,
+  .contentHead-content .quote-block {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentHead {
+    padding: 35px 12px;
+  }
+
+  .contentHead-content h2 {
+    font-size: 23px;
+  }
+
+  .contentHead-content h3 {
+    font-size: 19px;
+  }
+
+  .contentHead-content .carouselContainer img {
+    height: 200px;
+  }
+
+  .contentHead-content .accordion-title {
+    padding: 14px;
+  }
+
+  .contentHead-content .accordion-content {
+    padding: 15px;
+  }
+
+  .readMoreBtn {
+    width: 100%;
+  }
+}

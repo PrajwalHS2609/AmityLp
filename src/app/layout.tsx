@@ -1,17 +1,30 @@
-"use client"
+
+"use client";
 
 import "./globals.css";
-import Navbar from './../Components/Navbar/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "react-multi-carousel/lib/styles.css";
-import PopupForm from './../Components/PopupForm/PopupForm';
-import Footer from './../Components/Footer/Footer';
-import WhatsApp from './../Components/WhatsApp/WhatsApp';
-import Loader from './../Components/Loader/Loader';
+
+import Navbar from "./../Components/Navbar/Navbar";
+import PopupForm from "./../Components/PopupForm/PopupForm";
+import Footer from "./../Components/Footer/Footer";
+import WhatsApp from "./../Components/WhatsApp/WhatsApp";
+import Loader from "./../Components/Loader/Loader";
+
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import { client } from "@/Components/sanity/client";
 
+// Sanity Keywords Query
+const keywordsQuery = `
+  *[_type == "homeKeywords"][0]{
+    keywords
+  }
+`;
 
+type KeywordsData = {
+  keywords: string[];
+};
 
 export default function RootLayout({
   children,
@@ -20,12 +33,43 @@ export default function RootLayout({
 }>) {
   const [loading, setLoading] = useState(true);
 
+  // Store Sanity Keywords
+  const [keywordsData, setKeywordsData] =
+    useState<KeywordsData | null>(null);
+
+  // Existing Loader
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 1200);
 
     return () => clearTimeout(timeout);
+  }, []);
+
+  // Fetch Keywords from Sanity
+  useEffect(() => {
+    let active = true;
+
+    const fetchKeywords = async () => {
+      try {
+        const data = await client.fetch<KeywordsData | null>(
+          keywordsQuery
+        );
+
+        if (active) {
+          console.log("SANITY KEYWORDS:", data);
+          setKeywordsData(data);
+        }
+      } catch (error) {
+        console.error("Error fetching keywords:", error);
+      }
+    };
+
+    fetchKeywords();
+
+    return () => {
+      active = false;
+    };
   }, []);
 
   return (
@@ -39,7 +83,10 @@ export default function RootLayout({
             __html: `
               (function(w,d,s,l,i){
                 w[l]=w[l]||[];
-                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                w[l].push({
+                  'gtm.start': new Date().getTime(),
+                  event:'gtm.js'
+                });
                 var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),
                 dl=l!='dataLayer'?'&l='+l:'';
@@ -51,11 +98,12 @@ export default function RootLayout({
           }}
         />
 
-        {/* Existing Google Ads code */}
+        {/* Google Ads */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-17917921555"
         />
+
         <Script
           id="gtag-init"
           strategy="afterInteractive"
@@ -69,7 +117,11 @@ export default function RootLayout({
           }}
         />
 
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon.png"
+        />
       </head>
 
       <body>
@@ -86,10 +138,19 @@ export default function RootLayout({
           />
         </noscript>
 
+        {/* Navbar */}
         <Navbar />
+
+        {/* Existing Loader */}
         {loading ? <Loader /> : children}
-        <Footer />
+
+        {/* Footer with Sanity Keywords */}
+        <Footer data={keywordsData} />
+
+        {/* Popup Form */}
         <PopupForm />
+
+        {/* WhatsApp */}
         <WhatsApp />
       </body>
     </html>

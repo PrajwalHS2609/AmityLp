@@ -1,0 +1,7 @@
+.keyword-container{
+    background-color: var(--customColor1);
+    padding: 40px;
+}
+.keyword-container>h4{
+    color: white
+}

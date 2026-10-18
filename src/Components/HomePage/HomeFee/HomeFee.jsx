@@ -14,9 +14,9 @@ const HomeFee = () => {
           <div className="homeFees-card">
             <FaHandHoldingUsd className="homeFees-icon" />
             <div className="homeFees-cover">
-              <p>24 Months No Cost EMI</p>
+              <p>Sem</p>
               <span>
-                <h4>₹8906/-</h4>
+                <h4>$1250 USD</h4>
                 <p>per month onwards</p>
               </span>
             </div>
@@ -24,9 +24,9 @@ const HomeFee = () => {
           <div className="homeFees-card1">
             <FaGraduationCap className="homeFees-icon1" />
             <div className="homeFees-cover1">
-              <p>Full Course Fee</p>
+              <p>Yearly</p>
               <span>
-                <h4>₹56,300</h4>
+                <h4>$2380 USD</h4>
               </span>
             </div>
           </div>
@@ -35,7 +35,7 @@ const HomeFee = () => {
             <div className="homeFees-cover1">
               <p>Full Course Fee</p>
               <span>
-                <h4>₹2,25,000/-</h4>
+                <h4>$5000 USD </h4>
               </span>
             </div>
           </div>
