@@ -1,4 +1,6 @@
 
+import type { Metadata } from "next";
+
 import HomeApproval from "./../Components/HomePage/HomeApproval/HomeApproval";
 import HomeHeroSection from "./../Components/HomePage/HomeHeroSection/HomeHeroSection";
 import HomeExpertise from "./../Components/HomePage/HomeExpertise/HomeExpertise";
@@ -17,7 +19,6 @@ import HomeFaculty from "./../Components/HomePage/HomeFaculty/HomeFaculty";
 import HomeContent from "./../Components/HomeConrtent/HomeContent";
 import Keyword from "./../Components/HomeKeyword/HomeKeyword";
 
-// Sanity Client
 import { client } from "@/Components/sanity/client";
 
 // =====================================
@@ -44,19 +45,93 @@ const faqQuery = `
   }
 `;
 
-// Keywords
+// Homepage Keywords Section
 const keywordsQuery = `
   *[_type == "homeKeywords"][0]{
     keywords
   }
 `;
 
+// SEO Metadata
+const seoQuery = `
+  *[_type == "homeSeo"][0]{
+    metaTitle,
+    metaDescription,
+    metaKeywords,
+    canonicalUrl,
+    "ogImageUrl": ogImage.asset->url
+  }
+`;
+
+// =====================================
+// DYNAMIC SEO METADATA
+// =====================================
+
+type HomeSeoData = {
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string[];
+  canonicalUrl?: string;
+  ogImageUrl?: string;
+} | null;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const seo: HomeSeoData = await client.fetch(
+    seoQuery,
+    {},
+    { cache: "no-store" }
+  );
+
+  const title =
+    seo?.metaTitle
+  const description =
+    seo?.metaDescription
+  const canonical =
+    seo?.canonicalUrl
+
+  return {
+    title,
+    description,
+    keywords: seo?.metaKeywords || [],
+
+    alternates: {
+      canonical,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+      siteName: "Prizma Academy",
+      ...(seo?.ogImageUrl
+        ? {
+          images: [
+            {
+              url: seo.ogImageUrl,
+              alt: title,
+            },
+          ],
+        }
+        : {}),
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(seo?.ogImageUrl
+        ? { images: [seo.ogImageUrl] }
+        : {}),
+    },
+  };
+}
+
 // =====================================
 // HOME PAGE
 // =====================================
 
 export default async function HomePage() {
-  // Fetch all three Sanity documents
   const [homeContentData, faqData, keywordsData] =
     await Promise.all([
       client.fetch(
@@ -76,17 +151,9 @@ export default async function HomePage() {
       ),
     ]);
 
-  // Debugging - visible in VS Code terminal
-  console.log("HOME CONTENT:", homeContentData);
-  console.log("FAQ DATA:", faqData);
-  console.log("KEYWORDS DATA:", keywordsData);
-
   return (
     <div>
-      {/* Hero Section */}
       <HomeHeroSection />
-
-      {/* Home Sections */}
       <HomeApproval />
       <HomeExpertise />
       <HomeDifferent />

@@ -17,7 +17,7 @@ const HomeFee = () => {
               <p>Sem</p>
               <span>
                 <h4>$1250 USD</h4>
-                <p>per month onwards</p>
+                <p>per semester</p>
               </span>
             </div>
           </div>
