@@ -1,0 +1,416 @@
+
+/* ==========================================
+   SERVICE PAGE MAIN WRAPPER
+========================================== */
+
+.service-wrapper1 {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #334155;
+  overflow: hidden;
+}
+
+.service-wrapper1,
+.service-wrapper1 * {
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   SERVICE PAGE TITLE
+========================================== */
+
+.service-wrapper1 > h1 {
+  width: 100%;
+  text-align: center;
+  margin: 55px auto 25px;
+  padding: 0 20px;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #16345c;
+}
+
+/* ==========================================
+   SANITY PORTABLE TEXT CONTENT
+========================================== */
+
+.service-wrapper1 .slugContent-wrapper {
+  width: 100%;
+  padding: 35px 20px;
+  background: #ffffff;
+}
+
+.service-wrapper1 .slugContent-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #475569;
+}
+
+/* HEADINGS */
+
+.service-wrapper1 .slugContent-container h1,
+.service-wrapper1 .slugContent-container h2,
+.service-wrapper1 .slugContent-container h3,
+.service-wrapper1 .slugContent-container h4 {
+  color: #16345c;
+  font-weight: 700;
+  line-height: 1.35;
+  font-size: 20px;
+}
+
+.service-wrapper1 .slugContent-container h1 {
+  font-size: clamp(28px, 3vw, 38px);
+  margin: 35px 0 20px;
+}
+
+.service-wrapper1 .slugContent-container h2 {
+  font-size: clamp(24px, 2.5vw, 32px);
+  margin: 32px 0 18px;
+}
+
+.service-wrapper1 .slugContent-container h3 {
+  font-size: clamp(20px, 2vw, 26px);
+  margin: 28px 0 15px;
+}
+
+.service-wrapper1 .slugContent-container h4 {
+  font-size: 20px;
+  margin: 24px 0 12px;
+}
+
+/* PARAGRAPHS */
+
+.service-wrapper1 .slugContent-container p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  color: #475569;
+}
+
+/* LISTS */
+
+.service-wrapper1 .slugContent-container ul,
+.service-wrapper1 .slugContent-container ol {
+  padding-left: 28px;
+  margin: 18px 0 25px;
+}
+
+.service-wrapper1 .slugContent-container li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+/* LINKS */
+
+.service-wrapper1 .slugContent-container a {
+  color: #1769aa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.service-wrapper1 .slugContent-container a:hover {
+  color: #0c426e;
+  text-decoration: underline;
+}
+
+/* STRONG TEXT */
+
+.service-wrapper1 .slugContent-container strong {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* ==========================================
+   SANITY IMAGES
+========================================== */
+
+.service-wrapper1 .portableImg {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.service-wrapper1 .portableImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================================
+   HOME COMPONENTS CONTAINER
+========================================== */
+
+.service-wrapper1 .head-container {
+  width: 100%;
+  background: #f7faff;
+}
+
+/*
+  HomeAboutUs, HomeStats and WhyChoose
+  retain their own component styling.
+*/
+
+/* ==========================================
+   YOUTUBE VIDEO
+========================================== */
+
+.service-wrapper1 .youtube-container {
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+.service-wrapper1 .youtube-container iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ==========================================
+   CUSTOM TABLE
+========================================== */
+
+.service-wrapper1 .custom-table {
+  width: 100%;
+  margin: 25px 0;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.service-wrapper1 .custom-table h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #16345c;
+  font-weight: 700;
+}
+
+.service-wrapper1 .custom-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 550px;
+  font-size: 15px;
+}
+
+.service-wrapper1 .custom-table thead {
+  background: #16345c;
+  color: #ffffff;
+}
+
+.service-wrapper1 .custom-table th {
+  padding: 16px 20px;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #24476f;
+}
+
+.service-wrapper1 .custom-table td {
+  padding: 15px 20px;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  vertical-align: top;
+}
+
+.service-wrapper1 .custom-table tbody tr:nth-child(even) {
+  background: #f4f8fc;
+}
+
+.service-wrapper1 .custom-table tbody tr:hover {
+  background: #edf5ff;
+  transition: background 0.2s ease;
+}
+
+/* ==========================================
+   QUOTE BLOCK
+========================================== */
+
+.service-wrapper1 .quote-block,
+.service-wrapper1 .slugContent-container blockquote {
+  margin: 25px 0;
+  padding: 22px 28px;
+  border-left: 4px solid #2563a6;
+  background: #f1f7fd;
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+}
+
+.service-wrapper1 .quote-author {
+  display: block;
+  margin-top: 12px;
+  color: #16345c;
+  font-weight: 600;
+}
+
+/* ==========================================
+   HIGHLIGHT BLOCK
+========================================== */
+
+.service-wrapper1 .highlight-box {
+  padding: 25px 30px;
+  margin: 25px 0;
+  background: #eef6ff;
+  border: 1px solid #d8e8fa;
+  border-radius: 12px;
+}
+
+.service-wrapper1 .highlight-box h5 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #16345c;
+  margin-bottom: 12px;
+}
+
+/* ==========================================
+   ACCORDION
+========================================== */
+
+.service-wrapper1 .accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.service-wrapper1 .accordion-title {
+  padding: 18px 22px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #16345c;
+  cursor: pointer;
+  background: #f8fbff;
+}
+
+.service-wrapper1 .accordion-content {
+  padding: 20px 22px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* ==========================================
+   CAROUSEL
+========================================== */
+
+.service-wrapper1 .carouselContainer {
+  width: 100%;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.service-wrapper1 .carouselContainer img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.service-wrapper1 .carousel-caption {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 991px) {
+  .service-wrapper1 > h1 {
+    margin: 40px auto 20px;
+    font-size: 32px;
+  }
+
+  .service-wrapper1 .slugContent-wrapper {
+    padding: 30px 20px;
+  }
+
+  .service-wrapper1 .carouselContainer img {
+    height: 330px;
+  }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 767px) {
+  .service-wrapper1 > h1 {
+    margin: 30px auto 15px;
+    padding: 0 15px;
+    font-size: 27px;
+  }
+
+  .service-wrapper1 .slugContent-wrapper {
+    padding: 25px 15px;
+  }
+
+  .service-wrapper1 .slugContent-container {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .service-wrapper1 .slugContent-container p {
+    font-size: 15px;
+  }
+
+  .service-wrapper1 .slugContent-container h2 {
+    font-size: 25px;
+  }
+
+  .service-wrapper1 .slugContent-container h3 {
+    font-size: 21px;
+  }
+
+  .service-wrapper1 .youtube-container {
+    width: calc(100% - 30px);
+    margin: 30px auto;
+    padding: 7px;
+  }
+
+  .service-wrapper1 .custom-table {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .service-wrapper1 .custom-table table {
+    font-size: 13px;
+  }
+
+  .service-wrapper1 .custom-table th,
+  .service-wrapper1 .custom-table td {
+    padding: 12px;
+  }
+
+  .service-wrapper1 .highlight-box {
+    padding: 20px;
+  }
+
+  .service-wrapper1 .accordion-title {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .service-wrapper1 .accordion-content {
+    padding: 15px;
+  }
+
+  .service-wrapper1 .carouselContainer img {
+    height: 240px;
+  }
+}

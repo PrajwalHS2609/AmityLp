@@ -10,7 +10,7 @@ import {
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url";
 import Carousel from "react-bootstrap/Carousel";
-import { client } from '@/Components/sanity/client';
+import { client } from "./sanity/client";
 
 const builder = imageUrlBuilder(client);
 

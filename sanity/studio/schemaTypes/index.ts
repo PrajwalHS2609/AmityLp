@@ -6,6 +6,7 @@ import highlightBlock from './highlightBlock'
 import homeContent from './homeContent'
 import homeSeo from './homeSeo'
 import keywords from './keywords'
+import serviceContent from './serviceContent'
 import table from './table'
 
-export const schemaTypes = [faq, keywords, homeContent, accordionBlock, highlightBlock, table,blockContent,carouselBlock,homeSeo]
+export const schemaTypes = [faq, keywords, homeContent, accordionBlock, highlightBlock, table,blockContent,carouselBlock,homeSeo,serviceContent]

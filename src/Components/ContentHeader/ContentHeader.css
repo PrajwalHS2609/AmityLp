@@ -1,0 +1,41 @@
+.contentHeader {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.contentHeader-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contentHeader-title {
+  color: #ffffff;
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contentHeader {
+    min-height: 260px;
+    padding: 40px 15px;
+  }
+
+  .contentHeader-title {
+    font-size: 30px;
+  }
+}
