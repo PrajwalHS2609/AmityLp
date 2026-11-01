@@ -77,7 +77,7 @@ export default async function ServicePage({
   const service = await getService(slug);
 
   if (!service) {
-    notFound();
+    notFound();1
   }
 
   return <ServiceContent content={service} />;

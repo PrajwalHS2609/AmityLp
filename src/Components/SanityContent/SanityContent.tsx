@@ -10,6 +10,12 @@ import HomeSpecialization from "../HomePage/HomeSpecilization/HomeSpecialization
 import HomeAdapts from "../HomePage/HomeAdapts/HomeAdapts";
 import HomeFee from "../HomePage/HomeFee/HomeFee";
 import ContentHeader from './../ContentHeader/ContentHeader';
+import HomeApproval from "../HomePage/HomeApproval/HomeApproval";
+import HomeExpertise from "../HomePage/HomeExpertise/HomeExpertise";
+import HomeEligibility from "../HomePage/HomeEligibility/HomeEligibility";
+import HomeFaculty from "../HomePage/HomeFaculty/HomeFaculty";
+import HomePartner from "../HomePage/HomePartner/HomePartner";
+import HomeAdmission from "../HomePage/HomeAdmission/HomeAdmission";
 
 
 export type CustomTable = {
@@ -96,7 +102,7 @@ export default function ServiceContent({
       {/* HEADER */}
       {imageUrl && (
   <ContentHeader
-    img={imageUrl}
+    // img={imageUrl}
     heading={content.title}
   />
       )}
@@ -118,12 +124,19 @@ export default function ServiceContent({
 
       {/* HOME COMPONENTS */}
       <div className="head-container">
-     <HomeWorth />
+        
+  <HomeApproval />
+      <HomeExpertise />
+      {/* <HomeDifferent /> */}
+      <HomeWorth />
       <HomeProgram />
       <HomeSpecialization />
       <HomeAdapts />
       <HomeFee />
-
+      <HomeEligibility />
+      <HomeFaculty />
+      <HomePartner />
+      <HomeAdmission />
         {/* YOUTUBE VIDEO */}
         {youtubeEmbedUrl && (
           <div className="youtube-container">

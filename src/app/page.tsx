@@ -5,7 +5,7 @@ import HomeApproval from "./../Components/HomePage/HomeApproval/HomeApproval";
 import HomeHeroSection from "./../Components/HomePage/HomeHeroSection/HomeHeroSection";
 import HomeExpertise from "./../Components/HomePage/HomeExpertise/HomeExpertise";
 import HomeWorth from "./../Components/HomePage/HomeWorth/HomeWorth";
-import HomeDifferent from "./../Components/HomePage/HomeDifferent/HomeDifferent";
+// import HomeDifferent from "./../Components/HomePage/HomeDifferent/HomeDifferent";
 import HomeFaq from "./../Components/HomePage/HomeFaq/HomeFaq";
 import HomeAdmission from "./../Components/HomePage/HomeAdmission/HomeAdmission";
 import HomeSpecialization from "./../Components/HomePage/HomeSpecilization/HomeSpecialization";
@@ -156,7 +156,7 @@ export default async function HomePage() {
       <HomeHeroSection />
       <HomeApproval />
       <HomeExpertise />
-      <HomeDifferent />
+      {/* <HomeDifferent /> */}
       <HomeWorth />
       <HomeProgram />
       <HomeSpecialization />
