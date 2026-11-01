@@ -9,13 +9,13 @@ import HomeProgram from "../HomePage/HomeProgram/HomeProgram";
 import HomeSpecialization from "../HomePage/HomeSpecilization/HomeSpecialization";
 import HomeAdapts from "../HomePage/HomeAdapts/HomeAdapts";
 import HomeFee from "../HomePage/HomeFee/HomeFee";
-import ContentHeader from './../ContentHeader/ContentHeader';
 import HomeApproval from "../HomePage/HomeApproval/HomeApproval";
 import HomeExpertise from "../HomePage/HomeExpertise/HomeExpertise";
 import HomeEligibility from "../HomePage/HomeEligibility/HomeEligibility";
 import HomeFaculty from "../HomePage/HomeFaculty/HomeFaculty";
 import HomePartner from "../HomePage/HomePartner/HomePartner";
 import HomeAdmission from "../HomePage/HomeAdmission/HomeAdmission";
+import ContentHeader from './../ContentHeader/ContentHeader';
 
 
 export type CustomTable = {
@@ -102,7 +102,7 @@ export default function ServiceContent({
       {/* HEADER */}
       {imageUrl && (
   <ContentHeader
-    // img={imageUrl}
+    img={imageUrl}
     heading={content.title}
   />
       )}
