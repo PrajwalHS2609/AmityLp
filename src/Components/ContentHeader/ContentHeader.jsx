@@ -178,7 +178,7 @@ export default function ContentHeader({ img, heading }) {
               <div className="homeHero-respCover">
                 <div className="homeHero-respCoverContent1">
                   <b>INDIA&apos;S MOST RECOGNISED UGC-ENTITLED</b>
-                  <h2>Online MBA Program</h2>
+                  <h2>{heading}</h2>
                   <div className="homeHero-section">For Working Professionals </div>
                   <div className="homeHero-duration">
                     <div className="homeHero-durationContent">
