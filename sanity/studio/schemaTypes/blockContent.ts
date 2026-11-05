@@ -91,5 +91,7 @@ export default defineType({
     defineArrayMember({type: 'highlightBlock'}),
     // defineArrayMember({type: 'seoKeywordsBlock'}),
     defineArrayMember({type: 'carouselBlock'}),
+     defineArrayMember({type: 'serviceFaq'}),
+      defineArrayMember({type: 'serviceKeywords'}),
   ],
 })

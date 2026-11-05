@@ -450,5 +450,62 @@ export const homePortableTextComponents: PortableTextComponents = {
         </section>
       );
     },
+    serviceFaq: ({ value }) => {
+  const faq = value as {
+    title?: string;
+    faqs?: {
+      _key?: string;
+      question?: string;
+      answer?: string;
+    }[];
+  };
+
+  if (!faq.faqs?.length) return null;
+
+  return (
+    <section className="portable-faq">
+      {faq.title && <h2>{faq.title}</h2>}
+
+      {faq.faqs.map((item, index) => (
+        <details
+          key={item._key || index}
+          className="accordion-item"
+        >
+          <summary className="accordion-title">
+            {item.question}
+          </summary>
+
+          <div className="accordion-content">
+            <p>{item.answer}</p>
+          </div>
+        </details>
+      ))}
+    </section>
+  );
+},
+
+serviceKeywords: ({ value }) => {
+  const data = value as {
+    title?: string;
+    keywords?: string[];
+  };
+
+  if (!data.keywords?.length) return null;
+
+  return (
+    <div className="keywords-block">
+      <h2>{data.title || "Top Keywords"}</h2>
+      <div className="keyword-wrapper">
+        <div className="keywords-container">
+      <ul className="keywords-list">
+        {data.keywords.map((keyword, index) => (
+          <li key={index} className="keywords-item">{keyword}</li>
+        ))}
+      </ul>
+      </div>
+      </div>
+    </div>
+  );
+},
   },
 };
