@@ -6,7 +6,6 @@ import {
   type PortableTextBlock,
   type PortableTextComponents,
 } from "@portabletext/react";
-
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url";
 import Carousel from "react-bootstrap/Carousel";
@@ -450,6 +449,7 @@ export const homePortableTextComponents: PortableTextComponents = {
         </section>
       );
     },
+
     serviceFaq: ({ value }) => {
   const faq = value as {
     title?: string;
