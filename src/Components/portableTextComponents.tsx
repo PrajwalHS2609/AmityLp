@@ -450,7 +450,7 @@ export const homePortableTextComponents: PortableTextComponents = {
       );
     },
 
-    serviceFaq: ({ value }) => {
+   serviceFaq: ({ value }) => {
   const faq = value as {
     title?: string;
     faqs?: {
@@ -469,6 +469,7 @@ export const homePortableTextComponents: PortableTextComponents = {
       {faq.faqs.map((item, index) => (
         <details
           key={item._key || index}
+          name="service-faq"
           className="accordion-item"
         >
           <summary className="accordion-title">
